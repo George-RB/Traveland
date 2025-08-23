@@ -8,21 +8,16 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-orange-300: oklch(83.7% 0.128 66.29);
     --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-amber-400: oklch(82.8% 0.189 84.429);
-    --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-green-300: oklch(87.1% 0.15 154.449);
-    --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-400: oklch(70.7% 0.165 254.624);
+    --color-rose-300: oklch(81% 0.117 11.638);
+    --color-white: #fff;
     --spacing: 0.25rem;
     --container-6xl: 72rem;
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
-    --font-weight-bold: 700;
     --radius-sm: 0.25rem;
     --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
@@ -178,35 +173,29 @@
   }
 }
 @layer utilities {
-  .m-0 {
-    margin: calc(var(--spacing) * 0);
-  }
-  .m-auto {
-    margin: auto;
-  }
   .mx-auto {
     margin-inline: auto;
   }
   .my-0 {
     margin-block: calc(var(--spacing) * 0);
   }
-  .mt-1 {
-    margin-top: calc(var(--spacing) * 1);
-  }
-  .mt-6 {
-    margin-top: calc(var(--spacing) * 6);
-  }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
-  }
-  .mt-14 {
-    margin-top: calc(var(--spacing) * 14);
+  .my-auto {
+    margin-block: auto;
   }
   .flex {
     display: flex;
   }
   .table {
     display: table;
+  }
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
+  .max-h-36 {
+    max-height: calc(var(--spacing) * 36);
+  }
+  .w-64 {
+    width: calc(var(--spacing) * 64);
   }
   .max-w-6xl {
     max-width: var(--container-6xl);
@@ -217,23 +206,11 @@
   .flex-1 {
     flex: 1;
   }
-  .flex-2 {
-    flex: 2;
-  }
-  .flex-3 {
-    flex: 3;
-  }
-  .flex-4 {
-    flex: 4;
-  }
   .border-collapse {
     border-collapse: collapse;
   }
   .resize {
     resize: both;
-  }
-  .place-content-between {
-    place-content: space-between;
   }
   .items-center {
     align-items: center;
@@ -244,15 +221,6 @@
   .justify-between {
     justify-content: space-between;
   }
-  .justify-items-stretch {
-    justify-items: stretch;
-  }
-  .self-stretch {
-    align-self: stretch;
-  }
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
-  }
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
@@ -260,29 +228,44 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
+  .bg-orange-300 {
+    background-color: var(--color-orange-300);
   }
-  .bg-amber-400 {
-    background-color: var(--color-amber-400);
+  .bg-red-400 {
+    background-color: var(--color-red-400);
   }
-  .bg-blue-400 {
-    background-color: var(--color-blue-400);
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
-  .bg-green-300 {
-    background-color: var(--color-green-300);
+  .bg-rose-300 {
+    background-color: var(--color-rose-300);
+  }
+  .bg-\[url\(\'\.\/img\/background\.jpg\'\)\] {
+    background-image: url('./img/background.jpg');
+  }
+  .bg-\[url\(\'\/img\/background\.jpg\'\)\] {
+    background-image: url('/img/background.jpg');
+  }
+  .bg-auto {
+    background-size: auto;
+  }
+  .bg-bottom-left {
+    background-position: left bottom;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-top {
+    background-position: top;
+  }
+  .bg-top-left {
+    background-position: left top;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
   .px-9 {
     padding-inline: calc(var(--spacing) * 9);
-  }
-  .px-40 {
-    padding-inline: calc(var(--spacing) * 40);
-  }
-  .px-50 {
-    padding-inline: calc(var(--spacing) * 50);
-  }
-  .px-52 {
-    padding-inline: calc(var(--spacing) * 52);
   }
   .px-54 {
     padding-inline: calc(var(--spacing) * 54);
@@ -296,20 +279,8 @@
   .pt-9 {
     padding-top: calc(var(--spacing) * 9);
   }
-  .pr-4 {
-    padding-right: calc(var(--spacing) * 4);
-  }
-  .pr-\[2rem\] {
-    padding-right: 2rem;
-  }
-  .pr-\[21rem\] {
-    padding-right: 21rem;
-  }
-  .pl-12 {
-    padding-left: calc(var(--spacing) * 12);
-  }
-  .align-middle {
-    vertical-align: middle;
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;

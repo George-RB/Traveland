@@ -11,20 +11,26 @@
     />
     <title>Traveland</title>
   </head>
-  <body class="bg-[url('/img/background.jpg')] bg-no-repeat bg-top">
+  <body
+    class="bg-[url('/img/background.jpg')] bg-no-repeat bg-top cursor-default"
+  >
     <header class="max-w-[1600px] my-0 mx-auto text-white">
       <nav
         class="flex max-w-6xl my-0 mx-auto justify-between items-center pt-9"
       >
         <p class="flex-0.5">Trevland</p>
-        <ul class="flex flex-1 justify-around px-54 hover:text-amber-300">
-          <a href="#Home">Home</a>
-          <a href="#Location">Location</a>
+        <ul
+          class="flex flex-1 justify-around px-54 cursor-pointer hover:scale-105 transition-all"
+        >
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Location">Location</a></li>
           <a href="#Blog">Blog</a>
           <a href="#About">About</a>
           <a href="#Contact">Contact</a>
         </ul>
-        <button class="py-3.5 px-9 bg-red-400 rounded-sm flex-0.5">
+        <button
+          class="py-3.5 px-9 bg-red-400 rounded-sm flex-0.5 cursor-pointer hover:scale-105 transition-all"
+        >
           Booking now
         </button>
       </nav>

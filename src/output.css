@@ -196,6 +196,9 @@
   .my-0 {
     margin-block: calc(var(--spacing) * 0);
   }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
+  }
   .my-8 {
     margin-block: calc(var(--spacing) * 8);
   }
@@ -223,6 +226,12 @@
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
+  }
+  .ml-2\.5 {
+    margin-left: calc(var(--spacing) * 2.5);
+  }
   .flex {
     display: flex;
   }
@@ -243,6 +252,9 @@
   }
   .h-full {
     height: 100%;
+  }
+  .max-h-8 {
+    max-height: calc(var(--spacing) * 8);
   }
   .w-2 {
     width: calc(var(--spacing) * 2);

@@ -22,15 +22,23 @@
         class="flex max-w-6xl my-0 mx-auto justify-between items-center pt-9"
       >
         <!-- LOGO NOT COMPLETED!!! -->
-        <p class="flex-0.5">Trevland</p>
-        <ul
-          class="flex flex-1 justify-around px-54 cursor-pointer hover:scale-105 transition-all"
-        >
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#Location">Location</a></li>
-          <li><a href="#Blog">Blog</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Contact">Contact</a></li>
+        <p class="">Trevland</p>
+        <ul class="flex justify-between cursor-pointer space-x-8 text-lg">
+          <li>
+            <a href="#Home" class="hover:underline">Home</a>
+          </li>
+          <li>
+            <a href="#Location" class="hover:underline">Location</a>
+          </li>
+          <li>
+            <a href="#Blog" class="hover:underline">Blog</a>
+          </li>
+          <li>
+            <a href="#About" class="hover:underline">About</a>
+          </li>
+          <li>
+            <a href="#Contact" class="hover:underline">Contact</a>
+          </li>
         </ul>
         <button
           id="btnBook"
@@ -50,6 +58,7 @@
         </p>
         <button
           class="py-3.5 px-9 bg-red-400 rounded-sm flex-0.5 cursor-pointer hover:scale-105 transition-all"
+          id="btnExplore"
         >
           Explore more
         </button>
@@ -65,7 +74,10 @@
       </p>
       <section class="flex justify-center gap-6">
         <!-- Карточка 1 -->
-        <article class="bg-white rounded-lg shadow-lg flex flex-col w-[360px]">
+        <article
+          class="bg-white rounded-lg shadow-lg flex flex-col w-[360px] hover:scale-105 cursor-pointer transition-transform"
+          id="cardTurkey"
+        >
           <div class="h-[331px] overflow-hidden">
             <img
               src="./img/travel/image 45.png"
@@ -84,7 +96,10 @@
         </article>
 
         <!-- Карточка 2 -->
-        <article class="bg-white rounded-lg shadow-lg flex flex-col w-[360px]">
+        <article
+          class="bg-white rounded-lg shadow-lg flex flex-col w-[360px] hover:scale-105 cursor-pointer transition-transform"
+          id="cardMalaysia"
+        >
           <div class="h-[331px] overflow-hidden">
             <img
               src="./img/travel/image 48.png"
@@ -103,7 +118,10 @@
         </article>
 
         <!-- Карточка 3 -->
-        <article class="bg-white rounded-lg shadow-lg flex flex-col w-[360px]">
+        <article
+          class="bg-white rounded-lg shadow-lg flex flex-col w-[360px] hover:scale-105 cursor-pointer transition-transform"
+          id="cardTurkey"
+        >
           <div class="h-[331px] overflow-hidden">
             <img
               src="./img/travel/image 47.png"

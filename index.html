@@ -22,22 +22,24 @@
         class="flex max-w-6xl my-0 mx-auto justify-between items-center pt-9"
       >
         <!-- LOGO NOT COMPLETED!!! -->
-        <p class="">Trevland</p>
-        <ul class="flex justify-between cursor-pointer space-x-8 text-lg">
+        <p id="Home">Trevland</p>
+        <ul
+          class="flex justify-between cursor-pointer space-x-8 text-lg text-white [&>li>a]:hover:transition-all [&>li>a]:hover:text-red-400"
+        >
           <li>
-            <a href="#Home" class="hover:underline">Home</a>
+            <a href="#Home">Home</a>
           </li>
           <li>
-            <a href="#Location" class="hover:underline">Location</a>
+            <a href="#Location">Location</a>
           </li>
           <li>
-            <a href="#Blog" class="hover:underline">Blog</a>
+            <a href="#Blog">Blog</a>
           </li>
           <li>
-            <a href="#About" class="hover:underline">About</a>
+            <a href="#About">About</a>
           </li>
           <li>
-            <a href="#Contact" class="hover:underline">Contact</a>
+            <a href="#Contact">Contact</a>
           </li>
         </ul>
         <button
@@ -67,15 +69,19 @@
     <!-- HEADER END -->
     <!-- SECTION LOCATION START -->
     <section class="max-w-6xl my-0 mx-auto pt-36">
-      <h2 class="text-center text-4xl font-bold pb-5">Popular Location</h2>
+      <h2 id="Location" class="text-center text-4xl font-bold pb-5">
+        Popular Location
+      </h2>
       <p class="text-center max-w-[650px] mx-auto opacity-50 pb-12">
         For every one of us, travel came first. We've spent years living as
         nomads, pioneers, and voyagers— from island hopping in the
       </p>
-      <section class="flex justify-center gap-6">
+      <section
+        class="flex justify-center gap-6 [&>article]:hover:scale-95 [&>article]:hover:transition-transform [&>article]:hover:cursor-pointer"
+      >
         <!-- Карточка 1 -->
         <article
-          class="bg-white rounded-lg shadow-lg flex flex-col w-[360px] hover:scale-105 cursor-pointer transition-transform"
+          class="bg-white rounded-lg shadow-lg flex flex-col w-[360px]"
           id="cardTurkey"
         >
           <div class="h-[331px] overflow-hidden">
@@ -97,7 +103,7 @@
 
         <!-- Карточка 2 -->
         <article
-          class="bg-white rounded-lg shadow-lg flex flex-col w-[360px] hover:scale-105 cursor-pointer transition-transform"
+          class="bg-white rounded-lg shadow-lg flex flex-col w-[360px]"
           id="cardMalaysia"
         >
           <div class="h-[331px] overflow-hidden">
@@ -119,7 +125,7 @@
 
         <!-- Карточка 3 -->
         <article
-          class="bg-white rounded-lg shadow-lg flex flex-col w-[360px] hover:scale-105 cursor-pointer transition-transform"
+          class="bg-white rounded-lg shadow-lg flex flex-col w-[360px]"
           id="cardTurkey"
         >
           <div class="h-[331px] overflow-hidden">
@@ -149,62 +155,62 @@
         With the New Year comes a refreshing sense of wanderlust, a longing in
         our souls to escape to warmer climates,
       </p>
-      <section class="flex justify-center gap-6">
+      <section
+        class="flex justify-center gap-6 [&>article]:hover:text-red-400 [&>article]:hover:scale-95 [&>article]:hover:transition-transform [&>article]:hover:cursor-pointer"
+      >
         <!-- Карточка 1 -->
         <article class="bg-white rounded-lg shadow-lg flex flex-col w-[262px]">
           <div class="h-[173px] overflow-hidden rounded-2xl">
             <img
-              src="./img/travel/Discover-sajek-valley 1.png"
-              alt="Sajek Valley
-"
+              src="./img/travel/usa-best-places-new-york 1.png"
+              alt="Statue of Liberty"
               class="w-full h-full object-cover"
             />
           </div>
           <section>
             <h3 class="text-xl font-medium mb-2 mt-5 text-left">
-              Sajek Valley
+              Statue of Liberty
             </h3>
             <section class="flex justify-between items-center max-h-8">
               <div class="location flex">
                 <img src="./img/ico/location.png" alt="location" />
-                <p class="ml-2.5">Bangladesh</p>
+                <p class="ml-2.5">New York</p>
               </div>
               <div class="stars flex mr-2.5">
                 <img src="./img/ico/star.png" alt="star" />
-                <p class="ml-2.5">4.7</p>
+                <p class="ml-2.5">4.8</p>
               </div>
             </section>
-            <p class="my-2 opacity-50">3 Day 4 Nights</p>
-            <p>$400/person</p>
+            <p class="my-2 opacity-50">4 Day 5 Nights</p>
+            <p>$450/person</p>
           </section>
         </article>
 
-        <!-- Карточка 1 -->
+        <!-- Карточка 2 -->
         <article class="bg-white rounded-lg shadow-lg flex flex-col w-[262px]">
           <div class="h-[173px] overflow-hidden rounded-2xl">
             <img
-              src="./img/travel/Discover-sajek-valley 1.png"
-              alt="Sajek Valley
-"
+              src="./img/travel/china-great-wall-and-mountain 1.png"
+              alt="The Great Wall "
               class="w-full h-full object-cover"
             />
           </div>
           <section>
             <h3 class="text-xl font-medium mb-2 mt-5 text-left">
-              Sajek Valley
+              The Great Wall
             </h3>
             <section class="flex justify-between items-center max-h-8">
               <div class="location flex">
                 <img src="./img/ico/location.png" alt="location" />
-                <p class="ml-2.5">Bangladesh</p>
+                <p class="ml-2.5">China</p>
               </div>
               <div class="stars flex mr-2.5">
                 <img src="./img/ico/star.png" alt="star" />
-                <p class="ml-2.5">4.7</p>
+                <p class="ml-2.5">4.9</p>
               </div>
             </section>
-            <p class="my-2 opacity-50">3 Day 4 Nights</p>
-            <p>$400/person</p>
+            <p class="my-2 opacity-50">7 Day 8 Nights</p>
+            <p>$850/person</p>
           </section>
         </article>
 

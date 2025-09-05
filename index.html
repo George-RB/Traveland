@@ -264,14 +264,15 @@
     <!-- SECTION LOCATION END -->
 
     <!-- SECTION FLEX GRID CARDS -->
-    <section class="max-w-6xl my-0 mx-auto pt-36">
+    <!-- <section class="max-w-6xl my-0 mx-auto pt-36">
       <h2 class="text-center text-4xl font-bold pb-5">From Blog & News</h2>
       <p class="text-center max-w-[650px] mx-auto opacity-50 pb-12">
         Welcome to Community Conversations, a new interview series featuring
         Intrepid travellers, creatives and activists in our community.
-      </p>
-      <section class="flex flex-1/2 gap-8">
-        <div class="cardInfo">
+      </p> -->
+
+      <!-- <section class="flex flex-1/2 gap-8">
+        <div class="cardInfo" id="mainCard">
           <img src="./img/canada-ontario-niagara-falls-2 1.png" alt="Canada" />
           <h4 class="font-bold mt-9 mb-2.5">Banff National Park</h4>
           <p class="max-w-[470px] pb-2.5">
@@ -282,39 +283,123 @@
           </p>
           <a href="#" class="font-medium">@thomasalva_adison</a>
         </div>
-        <div class="cards flex-1/2">
-          <div class="miniCard flex">
+        <div
+          class="cards flex-1/2 [&>div]:hover:transition-all [&>div]:hover:cursor-pointer [&>div]:hover:rounded-2xl [&>div]:hover:bg-red-200"
+        >
+          <div class="miniCard flex" id="otherCard">
             <div class="left">
-              <img src="./img/india-top-attractions-varanasi 1.png" alt="" />
+              <img
+                src="./img/hiroshima-japan-1500-1100x825 1.png"
+                alt="Hiroshima"
+                class="max-w-[262px]"
+              />
             </div>
-            <div class="rigth">
-              <h4>The Hiroshima Peace!</h4>
-              <p>It was formally opened to the public in August that year.</p>
-              <a href="#">@shova_bd88</a>
+            <div class="rigth flex flex-col justify-center gap-2 pl-4">
+              <h4 class="font-medium">The Hiroshima Peace!</h4>
+              <p class="opacity-70">
+                It was formally opened to the public in August that year.
+              </p>
+              <a href="#" class="text-lg">@shova_bd88</a>
             </div>
           </div>
-          <div class="miniCard flex">
+
+          <div class="miniCard flex my-5" id="otherCard">
             <div class="left">
-              <img src="./img/india-top-attractions-varanasi 1.png" alt="" />
+              <img
+                src="./img/india-top-attractions-varanasi 1.png"
+                alt="The faithful prayers!"
+                class="max-w-[262px]"
+              />
             </div>
-            <div class="rigth">
-              <h4>The Hiroshima Peace!</h4>
-              <p>It was formally opened to the public in August that year.</p>
-              <a href="#">@shova_bd88</a>
+            <div class="rigth flex flex-col justify-center gap-2 pl-4">
+              <h4 class="font-medium">The faithful prayers!</h4>
+              <p class="opacity-70">
+                A major pilgrimage center for Hindus, the holy city.
+              </p>
+              <a href="#" class="text-lg">@adem/smith</a>
             </div>
           </div>
-          <div class="miniCard flex">
+          <div class="miniCard flex" id="otherCard">
             <div class="left">
-              <img src="./img/india-top-attractions-varanasi 1.png" alt="" />
+              <img
+                src="./img/Naltar-lake-pakistan 1.png"
+                alt="Colourful waters!"
+                class="max-w-[262px]"
+              />
             </div>
-            <div class="rigth">
-              <h4>The Hiroshima Peace!</h4>
-              <p>It was formally opened to the public in August that year.</p>
-              <a href="#">@shova_bd88</a>
+            <div class="rigth flex flex-col justify-center gap-2 pl-4">
+              <h4 class="font-medium">Colourful waters!</h4>
+              <p class="opacity-70">
+                Forest-driven water and energy cycles are poorly.
+              </p>
+              <a href="#" class="text-lg">@jhon7leew</a>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
+
+      <div class="max-w-6xl mx-auto pt-16 px-4">
+        <h2 class="text-center text-4xl font-bold pb-5">From Blog & News</h2>
+        <p class="text-center max-w-[650px] mx-auto opacity-50 pb-12">
+            Welcome to Community Conversations, a new interview series featuring
+            Intrepid travellers, creatives and activists in our community.
+        </p>
+
+        <section class="flex flex-col md:flex-row gap-8">
+            <div class="cardInfo bg-white p-4 rounded-xl shadow-md" id="mainCard">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Canada" class="w-full h-48 object-cover rounded-lg"/>
+                <h4 class="font-bold mt-4 mb-2.5 text-xl">Banff National Park</h4>
+                <p class="max-w-[470px] pb-2.5 text-gray-600">
+                    Banff National Park lies in the heart of the majestic Rocky
+                    Mountains in the province of Alberta, and showcases some of Canada's
+                    most beautiful scenery. Turquoise-colored lakes, snow-capped peaks,
+                    and glaciers are all easily accessible
+                </p>
+                <a href="#" class="font-medium text-blue-500">@thomasalva_adison</a>
+            </div>
+            
+            <div class="flex-1 flex flex-col gap-5">
+                <div class="miniCard flex bg-white p-3 rounded-xl shadow-sm hover:shadow-md transition-all cursor-pointer other-card">
+                    <div class="left">
+                        <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65" alt="Hiroshima" class="w-32 h-24 object-cover rounded-lg"/>
+                    </div>
+                    <div class="right flex flex-col justify-center gap-1 pl-4">
+                        <h4 class="font-medium">The Hiroshima Peace!</h4>
+                        <p class="opacity-70 text-sm">
+                            It was formally opened to the public in August that year.
+                        </p>
+                        <a href="#" class="text-blue-500">@shova_bd88</a>
+                    </div>
+                </div>
+
+                <div class="miniCard flex bg-white p-3 rounded-xl shadow-sm hover:shadow-md transition-all cursor-pointer other-card">
+                    <div class="left">
+                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="India" class="w-32 h-24 object-cover rounded-lg"/>
+                    </div>
+                    <div class="right flex flex-col justify-center gap-1 pl-4">
+                        <h4 class="font-medium">The faithful prayers!</h4>
+                        <p class="opacity-70 text-sm">
+                            A major pilgrimage center for Hindus, the holy city.
+                        </p>
+                        <a href="#" class="text-blue-500">@adem/smith</a>
+                    </div>
+                </div>
+                
+                <div class="miniCard flex bg-white p-3 rounded-xl shadow-sm hover:shadow-md transition-all cursor-pointer other-card">
+                    <div class="left">
+                        <img src="https://images.unsplash.com/photo-1539650116579-7d4c5c0f6d5c" alt="Pakistan" class="w-32 h-24 object-cover rounded-lg"/>
+                    </div>
+                    <div class="right flex flex-col justify-center gap-1 pl-4">
+                        <h4 class="font-medium">Colourful waters!</h4>
+                        <p class="opacity-70 text-sm">
+                            Forest-driven water and energy cycles are poorly.
+                        </p>
+                        <a href="#" class="text-blue-500">@jhon7leew</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     </section>
 
     <!-- SECTION FLEX GRID CARDS -->

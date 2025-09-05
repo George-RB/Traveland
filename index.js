@@ -73,3 +73,56 @@ btnLeft.addEventListener("click", () => {
   currentPosition = Math.max(currentPosition - slideWidth, 0);
   slider.style.transform = `translateX(-${currentPosition}px)`;
 });
+
+// Cards
+
+// sdfsdf
+document.addEventListener("DOMContentLoaded", function () {
+  // Получаем главную карточку
+  const mainCard = document.getElementById("mainCard");
+
+  // Получаем все маленькие карточки
+  const otherCards = document.querySelectorAll(".other-card");
+
+  // Добавляем обработчик клика на каждую маленькую карточку
+  otherCards.forEach((card) => {
+    card.addEventListener("click", function () {
+      // Создаем временный контейнер для хранения содержимого главной карточки
+      const tempContent = document.createElement("div");
+      tempContent.innerHTML = mainCard.innerHTML;
+
+      // Заменяем содержимое главной карточки содержимым выбранной маленькой карточки
+      // Но адаптируем его к структуре главной карточки
+      const otherImg = this.querySelector("img").src;
+      const otherTitle = this.querySelector("h4").textContent;
+      const otherDesc = this.querySelector("p").textContent;
+      const otherLink = this.querySelector("a").textContent;
+
+      // Обновляем главную карточку
+      mainCard.querySelector("img").src = otherImg;
+      mainCard.querySelector("h4").textContent = otherTitle;
+      mainCard.querySelector("p").textContent = otherDesc;
+      mainCard.querySelector("a").textContent = otherLink;
+
+      // Обновляем маленькую карточку данными из главной карточки
+      this.querySelector("img").src = tempContent.querySelector("img").src;
+      this.querySelector("h4").textContent =
+        tempContent.querySelector("h4").textContent;
+      this.querySelector("p").textContent =
+        tempContent.querySelector("p").textContent;
+      this.querySelector("a").textContent =
+        tempContent.querySelector("a").textContent;
+
+      // Добавляем анимацию для визуального feedback
+      mainCard.classList.add("ring-2", "ring-blue-500");
+      this.classList.add("ring-2", "ring-gray-400");
+
+      // Убираем выделение через короткое время
+      setTimeout(() => {
+        mainCard.classList.remove("ring-2", "ring-blue-500");
+        this.classList.remove("ring-2", "ring-gray-400");
+      }, 500);
+    });
+  });
+});
+// sdfsdf

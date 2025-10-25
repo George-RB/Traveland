@@ -76,4 +76,4 @@ traveland/
 
 **Ваше Имя**
 
-- GitHub: [@your-username](https://github.com/your-username)
+- GitHub: [@George-RB](https://github.com/George-RB)

@@ -79,7 +79,3 @@ traveland/
 **Ваше Имя**
 
 - GitHub: [@your-username](https://github.com/your-username)
-
-```
-
-```

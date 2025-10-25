@@ -36,7 +36,6 @@ Traveland - туристический веб-сайт, разработанны
 git clone https://github.com/your-username/traveland.git
 cd traveland
 ```
-````
 
 2. **Откройте в браузере**
 
@@ -79,3 +78,4 @@ traveland/
 **Ваше Имя**
 
 - GitHub: [@your-username](https://github.com/your-username)
+````

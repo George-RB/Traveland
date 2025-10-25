@@ -1,4 +1,7 @@
-````markdown
+```markdown
+
+```
+
 # 🌍 Traveland - Туристический сайт
 
 ## 📖 О проекте
@@ -78,4 +81,8 @@ traveland/
 **Ваше Имя**
 
 - GitHub: [@your-username](https://github.com/your-username)
-````
+
+```
+
+
+```

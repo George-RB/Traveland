@@ -77,3 +77,4 @@ traveland/
 **Картавенко Георгий**
 
 - GitHub: [@George-RB](https://github.com/George-RB)
+- GitHub Pages: https://george-rb.github.io/tailwind-project/

@@ -5,7 +5,7 @@ const cardMalaysia = document.getElementById('cardMalaysia');
 const cardSeul = document.getElementById('cardSeul');
 
 // Обработка по кнопкам в хедере
-bookingBtn.addEventListener('click', function () {
+bookingBtn: html.addEventListener('click', function () {
   alert(
     'Заявка на бронирование принята! Мы свяжемся с вами в ближайшее время.'
   );
